@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-white" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./images/main-logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle type=" button data-bs-toggle="dropdown" aria-expanded="false"
+              href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-item">
+          <div class="d-flex align-items-center gap-2">
+            <label for="">Light</label>
+            <input id="checkbox-for-theme" type="checkbox">
+            <label for="checkbox-for-theme" class="checkbox"></label>
+            <label for="">Dark</label>
+          </div>
+          <div class="d-flex nav-btn">
+            <button class="outline-btn">
+              <img src="./images/icons/login.svg" alt="icon">
+              <span>Log in</span>
+            </button>
+            <button class="btn common-btn gap-2">
+              Work With Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="banner">
+    <div class="">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner" id="banner-slider">
+          <div class="carousel-item slide-1 active">
+            <div class="container">
+              <h1>The Best IT Solutions for Your Business</h1>
+              <p>We carry out the widest range of high quality IT services and solutions to our customers making their
+                business better.</p>
+              <button class="common-btn">Start your project</button>
+              <div class="slide-footer">
+                <ul class="social-link">
+                  <li>
+                    <a href="#">
+                      <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.6975 0.37915V10.495H8.83833V5.49248C8.83833 4.17248 9.08666 2.89415 10.7233 2.89415C12.3375 2.89415 12.3575 4.40332 12.3575 5.57582V10.4958H15.5V4.94832C15.5 2.22332 14.9133 0.12915 11.7283 0.12915C10.1992 0.12915 9.17416 0.968317 8.755 1.76248H8.7125V0.37915H5.6975V0.37915ZM0.579163 0.37915H3.725V10.495H0.579163V0.37915Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.6667 0.5H1.33333C0.8725 0.5 0.5 0.873333 0.5 1.33333V14.6667C0.5 15.1267 0.8725 15.5 1.33333 15.5H8.5125V9.7H6.56417V7.42917H8.5125V5.7625C8.5125 3.825 9.69583 2.76917 11.4292 2.76917C12.0117 2.7675 12.595 2.7975 13.175 2.85833V4.875H11.9792C11.0392 4.875 10.8558 5.32333 10.8558 5.97917V7.425H13.1033L12.8117 9.69583H10.855V15.5H14.6667C15.1275 15.5 15.5 15.1267 15.5 14.6667V1.33333C15.5 0.873333 15.1275 0.5 14.6667 0.5Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.3609 6.66412C16.3717 6.80995 16.3717 6.95495 16.3717 7.09995C16.3717 11.5375 12.9942 16.6508 6.82169 16.6508C4.92002 16.6508 3.15335 16.1 1.66669 15.1433C1.93669 15.1741 2.19669 15.185 2.47752 15.185C4.04669 15.185 5.49085 14.655 6.64502 13.7508C5.16919 13.72 3.93252 12.7533 3.50585 11.4233C3.71335 11.4541 3.92169 11.475 4.14002 11.475C4.44085 11.475 4.74335 11.4333 5.02419 11.3608C3.48502 11.0491 2.33252 9.69829 2.33252 8.06662V8.02495C2.78002 8.27412 3.29919 8.42995 3.84919 8.45079C2.94502 7.84912 2.35252 6.81995 2.35252 5.65579C2.35252 5.03245 2.51835 4.46079 2.80919 3.96245C4.46169 5.99829 6.94585 7.32912 9.73085 7.47495C9.67919 7.22495 9.64752 6.96579 9.64752 6.70579C9.64752 4.85579 11.1442 3.34912 13.0042 3.34912C13.9709 3.34912 14.8434 3.75412 15.4567 4.40912C16.215 4.26329 16.9417 3.98245 17.5867 3.59829C17.3375 4.37745 16.8067 5.03245 16.1109 5.44829C16.7867 5.37495 17.4417 5.18829 18.0434 4.92829C17.5867 5.59329 17.0159 6.18579 16.3609 6.66412Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.9942 6.00259C17.8025 5.28759 17.24 4.72342 16.5258 4.53092C15.2208 4.17259 10 4.16675 10 4.16675C10 4.16675 4.78 4.16092 3.47417 4.50342C2.77417 4.69425 2.19583 5.27092 2.0025 5.98509C1.65833 7.29009 1.655 9.99675 1.655 9.99675C1.655 9.99675 1.65167 12.7168 1.99333 14.0084C2.185 14.7226 2.7475 15.2868 3.4625 15.4793C4.78083 15.8376 9.9875 15.8434 9.9875 15.8434C9.9875 15.8434 15.2083 15.8493 16.5133 15.5076C17.2267 15.3159 17.7917 14.7526 17.9858 14.0384C18.3308 12.7343 18.3333 10.0284 18.3333 10.0284C18.3333 10.0284 18.35 7.30759 17.9942 6.00259ZM8.33 12.5043L8.33417 7.50425L12.6733 10.0084L8.33 12.5043Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="studies">
+                  <span>Our case studies</span>
+                  <img src="./images/icons/allow-right.svg" alt="icon">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item slide-2">
+            <div class="container">
+              <h1>The Best IT Solutions for Your Business</h1>
+              <p>We carry out the widest range of high quality IT services and solutions to our customers making their
+                business better.</p>
+              <button class="common-btn">Start your project</button>
+              <div class="slide-footer">
+                <ul class="social-link">
+                  <li>
+                    <a href="#">
+                      <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.6975 0.37915V10.495H8.83833V5.49248C8.83833 4.17248 9.08666 2.89415 10.7233 2.89415C12.3375 2.89415 12.3575 4.40332 12.3575 5.57582V10.4958H15.5V4.94832C15.5 2.22332 14.9133 0.12915 11.7283 0.12915C10.1992 0.12915 9.17416 0.968317 8.755 1.76248H8.7125V0.37915H5.6975V0.37915ZM0.579163 0.37915H3.725V10.495H0.579163V0.37915Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.6667 0.5H1.33333C0.8725 0.5 0.5 0.873333 0.5 1.33333V14.6667C0.5 15.1267 0.8725 15.5 1.33333 15.5H8.5125V9.7H6.56417V7.42917H8.5125V5.7625C8.5125 3.825 9.69583 2.76917 11.4292 2.76917C12.0117 2.7675 12.595 2.7975 13.175 2.85833V4.875H11.9792C11.0392 4.875 10.8558 5.32333 10.8558 5.97917V7.425H13.1033L12.8117 9.69583H10.855V15.5H14.6667C15.1275 15.5 15.5 15.1267 15.5 14.6667V1.33333C15.5 0.873333 15.1275 0.5 14.6667 0.5Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.3609 6.66412C16.3717 6.80995 16.3717 6.95495 16.3717 7.09995C16.3717 11.5375 12.9942 16.6508 6.82169 16.6508C4.92002 16.6508 3.15335 16.1 1.66669 15.1433C1.93669 15.1741 2.19669 15.185 2.47752 15.185C4.04669 15.185 5.49085 14.655 6.64502 13.7508C5.16919 13.72 3.93252 12.7533 3.50585 11.4233C3.71335 11.4541 3.92169 11.475 4.14002 11.475C4.44085 11.475 4.74335 11.4333 5.02419 11.3608C3.48502 11.0491 2.33252 9.69829 2.33252 8.06662V8.02495C2.78002 8.27412 3.29919 8.42995 3.84919 8.45079C2.94502 7.84912 2.35252 6.81995 2.35252 5.65579C2.35252 5.03245 2.51835 4.46079 2.80919 3.96245C4.46169 5.99829 6.94585 7.32912 9.73085 7.47495C9.67919 7.22495 9.64752 6.96579 9.64752 6.70579C9.64752 4.85579 11.1442 3.34912 13.0042 3.34912C13.9709 3.34912 14.8434 3.75412 15.4567 4.40912C16.215 4.26329 16.9417 3.98245 17.5867 3.59829C17.3375 4.37745 16.8067 5.03245 16.1109 5.44829C16.7867 5.37495 17.4417 5.18829 18.0434 4.92829C17.5867 5.59329 17.0159 6.18579 16.3609 6.66412Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.9942 6.00259C17.8025 5.28759 17.24 4.72342 16.5258 4.53092C15.2208 4.17259 10 4.16675 10 4.16675C10 4.16675 4.78 4.16092 3.47417 4.50342C2.77417 4.69425 2.19583 5.27092 2.0025 5.98509C1.65833 7.29009 1.655 9.99675 1.655 9.99675C1.655 9.99675 1.65167 12.7168 1.99333 14.0084C2.185 14.7226 2.7475 15.2868 3.4625 15.4793C4.78083 15.8376 9.9875 15.8434 9.9875 15.8434C9.9875 15.8434 15.2083 15.8493 16.5133 15.5076C17.2267 15.3159 17.7917 14.7526 17.9858 14.0384C18.3308 12.7343 18.3333 10.0284 18.3333 10.0284C18.3333 10.0284 18.35 7.30759 17.9942 6.00259ZM8.33 12.5043L8.33417 7.50425L12.6733 10.0084L8.33 12.5043Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="studies">
+                  <span>Our case studies</span>
+                  <img src="./images/icons/allow-right.svg" alt="icon">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item slide-2">
+            <div class="container">
+              <h1>The Best IT Solutions for Your Business</h1>
+              <p>We carry out the widest range of high quality IT services and solutions to our customers making their
+                business better.</p>
+              <button class="common-btn">Start your project</button>
+              <div class="slide-footer">
+                <ul class="social-link">
+                  <li>
+                    <a href="#">
+                      <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5.6975 0.37915V10.495H8.83833V5.49248C8.83833 4.17248 9.08666 2.89415 10.7233 2.89415C12.3375 2.89415 12.3575 4.40332 12.3575 5.57582V10.4958H15.5V4.94832C15.5 2.22332 14.9133 0.12915 11.7283 0.12915C10.1992 0.12915 9.17416 0.968317 8.755 1.76248H8.7125V0.37915H5.6975V0.37915ZM0.579163 0.37915H3.725V10.495H0.579163V0.37915Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.6667 0.5H1.33333C0.8725 0.5 0.5 0.873333 0.5 1.33333V14.6667C0.5 15.1267 0.8725 15.5 1.33333 15.5H8.5125V9.7H6.56417V7.42917H8.5125V5.7625C8.5125 3.825 9.69583 2.76917 11.4292 2.76917C12.0117 2.7675 12.595 2.7975 13.175 2.85833V4.875H11.9792C11.0392 4.875 10.8558 5.32333 10.8558 5.97917V7.425H13.1033L12.8117 9.69583H10.855V15.5H14.6667C15.1275 15.5 15.5 15.1267 15.5 14.6667V1.33333C15.5 0.873333 15.1275 0.5 14.6667 0.5Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.3609 6.66412C16.3717 6.80995 16.3717 6.95495 16.3717 7.09995C16.3717 11.5375 12.9942 16.6508 6.82169 16.6508C4.92002 16.6508 3.15335 16.1 1.66669 15.1433C1.93669 15.1741 2.19669 15.185 2.47752 15.185C4.04669 15.185 5.49085 14.655 6.64502 13.7508C5.16919 13.72 3.93252 12.7533 3.50585 11.4233C3.71335 11.4541 3.92169 11.475 4.14002 11.475C4.44085 11.475 4.74335 11.4333 5.02419 11.3608C3.48502 11.0491 2.33252 9.69829 2.33252 8.06662V8.02495C2.78002 8.27412 3.29919 8.42995 3.84919 8.45079C2.94502 7.84912 2.35252 6.81995 2.35252 5.65579C2.35252 5.03245 2.51835 4.46079 2.80919 3.96245C4.46169 5.99829 6.94585 7.32912 9.73085 7.47495C9.67919 7.22495 9.64752 6.96579 9.64752 6.70579C9.64752 4.85579 11.1442 3.34912 13.0042 3.34912C13.9709 3.34912 14.8434 3.75412 15.4567 4.40912C16.215 4.26329 16.9417 3.98245 17.5867 3.59829C17.3375 4.37745 16.8067 5.03245 16.1109 5.44829C16.7867 5.37495 17.4417 5.18829 18.0434 4.92829C17.5867 5.59329 17.0159 6.18579 16.3609 6.66412Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.9942 6.00259C17.8025 5.28759 17.24 4.72342 16.5258 4.53092C15.2208 4.17259 10 4.16675 10 4.16675C10 4.16675 4.78 4.16092 3.47417 4.50342C2.77417 4.69425 2.19583 5.27092 2.0025 5.98509C1.65833 7.29009 1.655 9.99675 1.655 9.99675C1.655 9.99675 1.65167 12.7168 1.99333 14.0084C2.185 14.7226 2.7475 15.2868 3.4625 15.4793C4.78083 15.8376 9.9875 15.8434 9.9875 15.8434C9.9875 15.8434 15.2083 15.8493 16.5133 15.5076C17.2267 15.3159 17.7917 14.7526 17.9858 14.0384C18.3308 12.7343 18.3333 10.0284 18.3333 10.0284C18.3333 10.0284 18.35 7.30759 17.9942 6.00259ZM8.33 12.5043L8.33417 7.50425L12.6733 10.0084L8.33 12.5043Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="studies">
+                  <span>Our case studies</span>
+                  <img src="./images/icons/allow-right.svg" alt="icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- award section start -->
+  <section id="award">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="award-contant">
+            <div class="section-heading">
+              <h2>Award-Winning Software Company</h2>
+              <p>We create diverse, complex, web and mobile solutions for any business need. With us you get quality
+                software and perfect service every time.</p>
+              <button class="common-btn">More about us</button>
+            </div>
+            <h4>Some of our awards:</h4>
+            <div>
+              <ul>
+                <li>
+                  <img src="./images/icons/award-icon-1.svg" alt="icon">
+                </li>
+                <li>
+                  <img src="./images/icons/award-icon-2.svg" alt="icon">
+                </li>
+                <li>
+                  <img src="./images/icons/award-icon-3.svg" alt="icon">
+                </li>
+                <li>
+                  <img src="./images/icons/award-icon-4.svg" alt="icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="award-iamge">
+            <img src="./images/award.jpg" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- award section end -->
+  <!-- Services section start -->
+  <section id="services">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Offered Services</h2>
+        <div class="service-heading d-flex justify-contant-between">
+          <p>We are focused on helping brands grow through digital transformation services. We bring real solutions to
+            each client’s problems through a deep understanding of their market, solution, and vision.</p>
+          <button class="outline-btn">See all services</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="/images/icons/service-1.svg" alt="icon">
+            </div>
+            <h3>Custom Software Development
+              <a href="#"><img src="./images/icons/service-right-arrow.svg" alt="icon"></a href="#">
+            </h3>
+            <p>Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum tellus non
+              tellus, facilisi dignissim in quam massa. Aliquam, feugiat ut cum tellus, sit. Quis consectetur gravida ac
+              ac lectus cursus egestas.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="/images/icons/service-2.svg" alt="icon">
+            </div>
+            <h3>Software Integration
+              <a href="#"><img src="./images/icons/service-right-arrow.svg" alt="icon"></a href="#">
+            </h3>
+            <p>Id eget blandit sapien cras massa lectus lorem placerat. Quam dolor commodo fermentum bibendum dictumst.
+              Risus pretium eget at viverra eget. Sit neque adipiscing malesuada blandit justo, quam.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="/images/icons/service-3.svg" alt="icon">
+            </div>
+            <h3>Mobile App Development
+              <a href="#"><img src="./images/icons/service-right-arrow.svg" alt="icon"></a href="#">
+            </h3>
+            <p>Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id blandit
+              interdum est. Integer fames placerat turpis pretium quis hac leo lacus. Orci, dictum nunc mus quis semper
+              eu bibendum enim, morbi.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="/images/icons/service-4.svg" alt="icon">
+            </div>
+            <h3>Business Analytics
+              <a href="#"><img src="./images/icons/service-right-arrow.svg" alt="icon"></a href="#">
+            </h3>
+            <p>Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus convallis augue nisl,
+              etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius nunc a sed.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="/images/icons/service-5.svg" alt="icon">
+            </div>
+            <h3>Software Testing
+              <a href="#"><img src="./images/icons/service-right-arrow.svg" alt="icon"></a href="#">
+            </h3>
+            <p>Quis rhoncus quam venenatis facilisi. Risus dis libero nisl condimentum quis. Tincidunt ultricies
+              vulputate ornare nunc rhoncus in. Ultrices dolor eu natoque volutpat praesent curabitur ultricies. </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="/images/icons/service-6.svg" alt="icon">
+            </div>
+            <h3>Project Management
+              <a href="#"><img src="./images/icons/service-right-arrow.svg" alt="icon"></a href="#">
+            </h3>
+            <p>Massa dis morbi sagittis, tellus sit gravida. Id ut non ut in faucibus eu, ac. Tempus feugiat enim id
+              pellentesque a sagittis vitae, convallis. Nunc, arcu enim orci ullamcorper aenean. Scelerisque eget a nibh
+              bibendum commodo.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container">
+            <div class="section-heading">
+              <h2>Case Studies</h2>
+              <div class="service-heading service-heading-case-studis d-flex justify-contant-between">
+                <p>We bring real solutions to each client’s problems through a deep understanding of their market,
+                  solution, and vision.</p>
+                <button class="outline-btn">See all case studies</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="case-studies">
+    <div class="overly">
+      <div class="container">
+        <div class="case-studies-info">
+          <!-- carecoul import from bootstrap -->
+          <div id="carouselExampleIndicators" class="carousel slide study-main-slider">
+            <div class="carousel-indicators active">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="case-item carousel-item active">
+                <div class="case-logo">
+                  <img src="./images/case-logo.svg" alt="logo">
+                </div>
+                <h3>Cashless payment case study</h3>
+                <span>Payment Service Provider Company</span>
+                <p>Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat ultrices.
+                  Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper odio ornare...</p>
+                <button class="common-btn">View case study</button>
+              </div>
+              <div class="case-item carousel-item">
+                <div class="case-logo">
+                  <img src="./images/case-logo.svg" alt="logo">
+                </div>
+                <h3>Cashless payment case study 2</h3>
+                <span>Payment Service Provider Company</span>
+                <p>Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat ultrices.
+                  Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper odio ornare...</p>
+                <button class="common-btn">View case study</button>
+              </div>
+              <div class="case-item carousel-item">
+                <div class="case-logo">
+                  <img src="./images/case-logo.svg" alt="logo">
+                </div>
+                <h3>Cashless payment case study 3</h3>
+                <span>Payment Service Provider Company</span>
+                <p>Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat ultrices.
+                  Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper odio ornare...</p>
+                <button class="common-btn">View case study</button>
+              </div>
+            </div>
+            <div class="arrows study-slider">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <img src="./images/icons/case-left.svg" alt="icon">
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <img src="./images/icons/case-right.svg" alt="icon">
+              </button>
+            </div>
+          </div>
+          <!-- importr end -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services section end -->
+
+  <!-- choose section start -->
+  <section id="choose">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Why Choose Us?</h2>
+        <p>We personalize how we work to fit your project needs. Our approach helps augment innovation.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 choose-col">
+          <div class="choose-item">
+            <div class="choose-icon-1 center">
+              <img src="./images/icons/choose-icon-1.svg" alt="icon">
+            </div>
+            <h5>Build a functional prototype in 24 hrs</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 choose-col">
+          <div class="choose-item">
+            <div class="choose-icon-1 center">
+              <img src="./images/icons/choose-ichon-2.svg" alt="icon">
+            </div>
+            <h5>Build a functional prototype in 24 hrs</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 choose-col">
+          <div class="choose-item">
+            <div class="choose-icon-1 center">
+              <img src="./images/icons/choose-icon-3.svg" alt="icon">
+            </div>
+            <h5>Build a functional prototype in 24 hrs</h5>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="choose-item">
+            <div class="choose-icon-1 center">
+              <img src="./images/icons/c-i-4.svg" alt="icon">
+            </div>
+            <h5>Build a functional prototype in 24 hrs</h5>
+          </div>
+        </div>
+      </div>
+      <div class="clients">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="clients-text">
+              <p><span>200+</span>Clients Already Served</p>
+              <div class="review center">
+                <div>
+                  <h4>REVIEWED ON</h4>
+                  <div>
+                    <img src="./images/clients-logo.svg" alt="logo">
+                  </div>
+                </div>
+                <div>
+                  <ul class="star center">
+                    <li>
+                      <a href=""><img src="./images/icons/star.svg" alt="icon"></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="./images/icons/star.svg" alt="icon"></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="./images/icons/star.svg" alt="icon"></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="./images/icons/star.svg" alt="icon"></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="./images/icons/star.svg" alt="icon"></a>
+                    </li>
+                  </ul>
+                  <h6>49 reviews</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="case-studies-info">
+              <!-- carecoul import from bootstrap -->
+              <div id="review-slide" class="carousel slide study-main-slider review-study-main-slider">
+                <div class="carousel-indicators active">
+                  <button type="button" data-bs-target="#review-slide" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#review-slide" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#review-slide" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="case-item carousel-item active">
+                    <div class="case-logo">
+                      <img src="./images/case-logo.svg" alt="logo">
+                    </div>
+                    <h3>Cashless payment case study</h3>
+                    <span>Payment Service Provider Company</span>
+                    <p>Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat
+                      ultrices. Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper odio ornare...</p>
+                    <button class="common-btn">View case study</button>
+                  </div>
+                  <div class="case-item carousel-item">
+                    <div class="case-logo">
+                      <img src="./images/case-logo.svg" alt="logo">
+                    </div>
+                    <h3>Cashless payment case study 2</h3>
+                    <span>Payment Service Provider Company</span>
+                    <p>Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat
+                      ultrices. Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper odio ornare...</p>
+                    <button class="common-btn">View case study</button>
+                  </div>
+                  <div class="case-item carousel-item">
+                    <div class="case-logo">
+                      <img src="./images/case-logo.svg" alt="logo">
+                    </div>
+                    <h3>Cashless payment case study 3</h3>
+                    <span>Payment Service Provider Company</span>
+                    <p>Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat
+                      ultrices. Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper odio ornare...</p>
+                    <button class="common-btn">View case study</button>
+                  </div>
+                </div>
+                <div class="arrows study-slider review-slider">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#review-slide"
+                    data-bs-slide="prev">
+                    <img src="./images/icons/case-left.svg" alt="icon">
+
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#review-slide"
+                    data-bs-slide="next">
+                    <img src="./images/icons/case-right.svg" alt="icon">
+                  </button>
+                </div>
+              </div>
+              <!-- importr end -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- choose section end -->
+
+  <!-- project section start -->
+  <section id="project">
+    <div class="container">
+      <div class="section-heading">
+        <h6>Ready to get started?</h6>
+        <h2>Launch Your Project with Us</h2>
+        <button class="common-btn">Work with us</button>
+      </div>
+    </div>
+  </section>
+  <!-- project section end -->
+
+  <!-- footer start -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-item">
+        <div class="col-lg-6">
+          <div class="footer-logo">
+            <img src="./images/main-logo.svg" alt="logo">
+          </div>
+          <p>Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam
+            proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor
+            ullamcorper sodales ultrices eros. </p>
+          <h6>Subscribe to our newsletter</h6>
+          <input type="email" placeholder="Your Email">
+          <button class="common-btn">Subscribe</button>
+        </div>
+        <div class="col-lg-2">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Case Studies</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">News & Insights</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">Linkedin</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="last-item">
+            <p>Contact Us</p>
+            <a href="mailto:siammiya2024@gmail.com" target="_blank">siammiya2024@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
