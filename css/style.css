@@ -438,6 +438,7 @@ p {
 }
 .clients {
   padding-top: 112px;
+  padding-bottom: 96px;
 }
 .clients .clients-text {
   background: var(--dark);
@@ -510,6 +511,20 @@ p {
   background: var(--primary);
   opacity: 1;
 }
+.client-logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #E2E5F1;
+  border-radius: 8px;
+ 
+}
+
+
+
+
 /* project start */
 #project {
   background: rgba(11, 15, 25, 0.938);
@@ -532,6 +547,89 @@ p {
   padding-bottom: 48px;
 }
 /* project end */
+
+/* news section start  */
+#news {
+  padding: 96px 0;
+  background: #F3F6FF;
+}
+#news .news-slider-item h3{
+ font-weight: 900;
+ font-size: 24px;
+ line-height: 1.4;
+ color: var(--dark);
+ max-width: 307px;
+ padding-top: 16px;
+}
+#news .news-slider-item p{
+   font-size: 16px;
+   line-height: 1.6;
+   color: var(--paragraph);
+   padding-top: 16px;
+}
+.news-slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+}
+.news-slider .news-slider-item{
+     background: var(--white);
+     padding: 40px;
+     border: 1px solid rgba(147, 151, 173, 0.219);
+     border-radius: 8px;
+     box-shadow: var(--btn-shadow);
+     transition: all linear 0.2s;
+}
+.news-slider .news-slider-item:hover{
+    background: var(--primary);
+    
+}
+.news-slider .news-slider-item:hover h3 {
+  color: var(--white) !important;
+}
+
+.news-slider .news-slider-item:hover p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.news-slider .news-slider-item:hover span {
+  color: var(--white) !important;
+}
+
+.news-slider-item ul{
+  display: flex;
+  gap: 16px;
+  padding-top: 24px;
+}
+.news-slider-item ul li{
+  gap: 5px;
+}
+.news-slider-item strong{
+ background: #EFF2FC;
+ border-radius: 4px;
+ padding: 5px;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 1.6;
+ color: var(--dark);
+
+}
+.news-slider{
+    
+}
+.news-slider .dots{
+    
+}
+.news-slider .dots li{
+    width: 5px;
+    height: 10px;
+    border-radius: 50%;
+    background: #B4B7C9;
+}
+.news-slider .dots li.active{
+    
+}
+/* news section end */
 
 /* footer start */
 #footer {
@@ -591,6 +689,29 @@ p {
   font-size: 16px;
   line-height: 1.6;
   padding-bottom: 5px;
+}
+
+/* me */
+.input-control-parant {
+  display: grid;
+  
+  grid-template-columns: 1fr 124px;
+   
+}
+.input-control {
+   
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+}
+.input-control input{
+   font-size: 16px;
+   line-height: 24px;
+   background: transparent;
+}
+.footer-item button{
+  margin-top: 20px;
 }
 
 /* footer end */
